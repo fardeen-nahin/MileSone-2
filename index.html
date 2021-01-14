@@ -20,64 +20,390 @@
   <body>
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <div class="col-md-3">
-            <img style="height: 35px" src="icon/Logo.png" alt="" />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+        <a class="navbar-brand" href="#">
+          <img height="35px" src="icon/Logo.png" alt="Logo Images" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#home"
+                data-bs-toggle="modal"
+                data-bs-target="#contact-us-modal"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contact-us-modal"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contact-us-modal"
+                >Contact us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contact-us-modal"
+                >About us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="py-5 header-custom-bg">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div
+              class="col-md-7 d-flex justify-content-center align-items-center"
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="col-md-4">
-            <img src="" alt="" />
-          </div>
-          <div class="col-md-5">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav left-side">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item ms-5">
-                  <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item ms-5">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item ms-5">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
+              <img
+                class="w-75 img-fluid"
+                src="icon/shoe-logo.png"
+                alt="Top Banner Images"
+              />
+            </div>
+
+            <div class="col-md-5 order-first order-md-last mb-4 mb-md-0">
+              <h1 class="banner-heading heading-custom-color">
+                <span style="color: orange; font-size: 50px"> Nike React</span>
+                <br />
+                Infinity Run 2
+              </h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus aspernatur aliquam non similique qui in quas,
+                quia debitis rem et?
+              </p>
+              <button type="button" class="btn btn-primary btn-lg size">
+                Buy Now
+              </button>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="mt-5 container d-flex justify-content-evenly">
-        <div class="row">
-          <div class="col-6"><img src="icon/shoe-logo.png" alt="" /></div>
-          <div class="col-6 mt-5">
-            <h1 style="color: rgb(255, 110, 81)">NIKE REACT</h1>
-            <h1>INFINITY RUN 2</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing.Lorem, ipsum
-              dolor sit amet <br />
-              consectetur adipisicing elit.
-            </p>
-            <button type="button" class="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
-      </div>
+      </section>
     </header>
     <main>
-        
+      <section id="shoes" class="container mt-5">
+        <h3>Casual Shoes</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card shoe-card h-100 shadow">
+              <img src="images/c1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="card-title">Bata</h2>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <div class="card-footer shoe-card-footer">
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <h2>$230</h2>
+                  </div>
+                  <div class="col-6 d-flex align-items-center">
+                    <button type="button" class="btn btn-primary btn-lg size">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shoe-card h-100 shadow">
+              <img src="images/c2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="card-title">Apex</h2>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <div class="card-footer shoe-card-footer">
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <h2>$230</h2>
+                  </div>
+                  <div class="col-6 d-flex align-items-center">
+                    <button type="button" class="btn btn-primary btn-lg size">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shoe-card h-100 shadow">
+              <img src="images/c3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="card-title">Nike</h2>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <div class="card-footer shoe-card-footer">
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <h2>$230</h2>
+                  </div>
+                  <div class="col-6 d-flex align-items-center">
+                    <button type="button" class="btn btn-primary btn-lg size">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Formal Shoe -->
+      <section id="shoes" class="container mt-5">
+        <h3>Formal Shoes</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card shoe-card h-100 shadow">
+              <img src="images/f1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="card-title">High Slip</h2>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <div class="card-footer shoe-card-footer">
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <h2>$430</h2>
+                  </div>
+                  <div class="col-6 d-flex align-items-center">
+                    <button type="button" class="btn btn-primary btn-lg size">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shoe-card h-100 shadow">
+              <img src="images/f2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="card-title">Slip On Leather</h2>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <div class="card-footer shoe-card-footer">
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <h2>$250</h2>
+                  </div>
+                  <div class="col-6 d-flex align-items-center">
+                    <button type="button" class="btn btn-primary btn-lg size">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shoe-card h-100 shadow">
+              <img src="images/f3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="card-title">Slip On shoe</h2>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <div class="card-footer shoe-card-footer">
+                <div class="row">
+                  <div class="col-6 d-flex align-items-center">
+                    <h2>$330</h2>
+                  </div>
+                  <div class="col-6 d-flex align-items-center">
+                    <button type="button" class="btn btn-primary btn-lg size">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="card shadow border-0 p-3 mt-2">
+                <div class="row">
+                  <div
+                    class="col-lg-3 align-items-center d-flex justify-content-center"
+                  >
+                    <img height="70px" src="icon/1.png" />
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-body text-center text-lg-start">
+                      <h3 class="card-title heading-custom-color">
+                        Find To perfect fit
+                      </h3>
+                      <p class="card-text small">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aliquam expedita possimus nihil repellat alias
+                        exercitationem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow border-0 p-3 mt-2">
+                <div class="row">
+                  <div
+                    class="col-lg-3 align-items-center d-flex justify-content-center"
+                  >
+                    <img height="70px" src="icon/2.png" />
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-body text-center text-lg-start">
+                      <h3 class="card-title heading-custom-color">
+                        Free Exchange
+                      </h3>
+                      <p class="card-text small">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Aliquam expedita possimus nihil repellat alias
+                        exercitationem.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow border-0 p-3 mt-2">
+                <div class="row">
+                  <div
+                    class="col-lg-3 align-items-center d-flex justify-content-center"
+                  >
+                    <img height="70px" src="icon/3.png" />
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-body text-center text-lg-start">
+                      <h3 class="card-title heading-custom-color">
+                        Contact Our Seller
+                      </h3>
+                      <p class="card-text small">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Hic est velit incidunt nam obcaecati, facilis
+                        corrupti tempora quod fugit sint corporis ad, modi ea
+                        officiis!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-7 d-flex justify-content-center align-items-center order-first order-lg-last mb-5 mb-lg-0"
+            >
+              <img
+                class="img-fluid w-75"
+                src="icon/man.png"
+                alt="Fag Right Side Images"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h1 style="color: orangered; text-align: center; margin-bottom: 20px">
+          To Order Create an Account
+        </h1>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <script
