@@ -1,0 +1,13 @@
+body {
+  font-family: "Bebas Neue", cursive;
+}
+.col-6 h1{
+    font-size: 90px;
+}
+.col-6 img{
+    width: 80%;   
+}
+.links{
+    background-color:#5148FD;
+
+}
